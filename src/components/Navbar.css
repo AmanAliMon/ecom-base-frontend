@@ -1,0 +1,21 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+.font-tenor {
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+/* Hide scrollbar for the category row if it overflows on smaller screens */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Specific button transitions */
+.nav-action-btn {
+  @apply transition-all duration-300 ease-in-out;
+}

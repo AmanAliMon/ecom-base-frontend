@@ -1,0 +1,41 @@
+/* Hero.css */
+
+/* Subtle floating animation for the perfume bottle */
+.hero-image-wrapper {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Entry animation for text */
+.animate-fade-in {
+    animation: fadeInRight 1s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Optional: Custom cursor or specific font overrides if needed */
+.font-tenor {
+    font-family: 'Tenor Sans', sans-serif;
+    letter-spacing: 0.05em;
+}

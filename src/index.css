@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+
+
+branding
+
+*/
+
+/* Branding.css */
+@layer base{
+
+:root {
+  --onyx: #0E0E0D;
+  --pitch-black: #0C0A07;
+  --brown-bark: #6B411C;
+  --copper: #B3793F;
+  --dark-coffee: #2A1B10;
+  --font-main: 'Tenor Sans', sans-serif;
+  /* Stelina Branding Overrides */
+    --text-muted: #666666;
+  --primary-gold: var(--copper);
+    --border-light: #eeeeee;
+  --text-dark: var(--pitch-black);
+  --bg-light: #B3793F;
+  /* A very soft off-white to contrast the dark coffee */
+}
+}
+body {
+  background-color: #ffffff;
+  color: var(--pitch-black);
+  font-family: 'Tenor Sans', sans-serif;
+}
