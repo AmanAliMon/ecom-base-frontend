@@ -7,7 +7,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/products')
+    axios.get(`${process.env.REACT_APP_API_URL}/api/products`)
       .then(res => {
         setFeaturedProducts(res.data.slice(0, 4));
         setLoading(false);

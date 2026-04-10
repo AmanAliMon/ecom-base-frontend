@@ -30,7 +30,7 @@ const AdminDashboard = () => {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/products');
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/products`);
       console.log('Products fetched:', res.data);
       setProducts(res.data);
       setLoading(false);
@@ -43,7 +43,7 @@ const AdminDashboard = () => {
   const fetchOrders = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.get('http://localhost:5000/api/orders/all', {
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/orders/all`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setOrders(res.data);
@@ -58,7 +58,7 @@ const AdminDashboard = () => {
     
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:5000/api/products', {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/products`, {
         ...newProduct,
         price: parseFloat(newProduct.price),
         stock: parseInt(newProduct.stock)
@@ -91,7 +91,7 @@ const AdminDashboard = () => {
     if (window.confirm('Delete this product?')) {
       try {
         const token = localStorage.getItem('token');
-        await axios.delete(`http://localhost:5000/api/products/${id}`, {
+        await axios.delete(`${process.env.REACT_APP_API_URL}/api/products/${id}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         alert('✅ Product deleted!');

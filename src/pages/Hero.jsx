@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
+import { useNavigate } from 'react-router-dom';
 
+import Buttons from './Buttons';
 const Hero = () => {
+    const navigate = useNavigate();
+
   return (
     <section className="relative flex flex-col md:flex-row items-center justify-between min-h-[85vh] bg-stelina-bg px-6 md:px-[10%] font-tenor overflow-hidden">
       
@@ -22,12 +26,12 @@ const Hero = () => {
           <span className="text-3xl md:text-4xl text-stelina-gold font-medium">$170.00</span>
         </div>
 
-        <Link 
-          to="/products" 
-          className="inline-block bg-dark text-white px-12 py-4 uppercase text-xs tracking-widest font-bold border border-dark hover:bg-transparent hover:text-dark transition-all duration-300"
-        >
-          Shop Now
-        </Link>
+        <Buttons.Primary variant="fill"
+          onClick={()=>navigate("/products") }
+          className="text-white px-12 py-4 text-lg tracking-widest font-bold duration-300"
+        Text='Shop Now'
+/>
+          
       </div>
 
       {/* Hero Right: Product Image */}

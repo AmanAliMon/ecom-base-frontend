@@ -1,0 +1,333 @@
+/* ============================================ */
+/* STELINA FOOTER - SCOPED STYLES              */
+/* No global conflicts - all classes prefixed   */
+/* ============================================ */
+.stelina-footer {
+    background: var(--dark-coffee);
+    color: #ffffff;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.stelina-footer__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Newsletter Section */
+.stelina-footer__newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 0;
+    gap: 40px;
+}
+
+.stelina-footer__newsletter-content {
+    flex: 1;
+}
+
+.stelina-footer__newsletter-title {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0 0 8px 0;
+    color: #ffffff;
+}
+
+.stelina-footer__newsletter-text {
+    font-size: 14px;
+    color: #aaaaaa;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.stelina-footer__newsletter-form {
+    display: flex;
+    gap: 12px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.stelina-footer__input {
+    flex: 1;
+    padding: 14px 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.stelina-footer__input::placeholder {
+    color: #888888;
+}
+
+.stelina-footer__input:focus {
+    border-color: var(--copper);
+}
+
+.stelina-footer__btn {
+    padding: 14px 32px;
+    background: var(--copper);
+    color: #ffffff;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+}
+
+.stelina-footer__btn:hover {
+    background: #e6a84a;
+}
+
+/* Divider */
+.stelina-footer__divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+/* Main Footer Content */
+.stelina-footer__main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    padding: 48px 0;
+}
+
+/* Brand Column */
+.stelina-footer__logo {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin: 0 0 8px 0;
+    color: #ffffff;
+}
+
+.stelina-footer__tagline {
+    font-size: 13px;
+    color: var(--copper);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+}
+
+.stelina-footer__description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #bbbbbb;
+    margin: 0 0 24px 0;
+}
+
+/* Social Links */
+.stelina-footer__social {
+    display: flex;
+    gap: 16px;
+}
+
+.stelina-footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.stelina-footer__social-link:hover {
+    background: var(--copper);
+    transform: translateY(-2px);
+}
+
+.stelina-footer__social-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Footer Columns */
+.stelina-footer__heading {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.stelina-footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.stelina-footer__list-item {
+    margin-bottom: 12px;
+}
+
+.stelina-footer__link {
+    font-size: 14px;
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    line-height: 1.6;
+}
+
+.stelina-footer__link:hover {
+    color: var(--copper);
+}
+
+/* Contact Items */
+.stelina-footer__list--contact {
+    margin-top: 0;
+}
+
+.stelina-footer__contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.stelina-footer__icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--copper);
+}
+
+.stelina-footer__text {
+    font-size: 14px;
+    color: #bbbbbb;
+    line-height: 1.6;
+}
+
+/* Bottom Bar */
+.stelina-footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.stelina-footer__copyright {
+    font-size: 13px;
+    color: #888888;
+    margin: 0;
+}
+
+.stelina-footer__legal {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stelina-footer__legal-link {
+    font-size: 13px;
+    color: #888888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.stelina-footer__legal-link:hover {
+    color: var(--copper);
+}
+
+.stelina-footer__separator {
+    color: #555555;
+    font-size: 12px;
+}
+
+/* Payment Icons */
+.stelina-footer__payment {
+    display: flex;
+    gap: 16px;
+}
+
+.stelina-footer__payment-icon {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #666666;
+    padding: 4px 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .stelina-footer__main {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px;
+    }
+
+    .stelina-footer__column--brand {
+        grid-column: span 3;
+    }
+
+    .stelina-footer__newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stelina-footer__newsletter-form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .stelina-footer__main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stelina-footer__column--brand {
+        grid-column: span 2;
+    }
+
+    .stelina-footer__bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stelina-footer__legal {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .stelina-footer__container {
+        padding: 0 16px;
+    }
+
+    .stelina-footer__main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .stelina-footer__column--brand {
+        grid-column: span 1;
+    }
+
+    .stelina-footer__newsletter-form {
+        flex-direction: column;
+    }
+
+    .stelina-footer__btn {
+        width: 100%;
+    }
+
+    .stelina-footer__social {
+        justify-content: center;
+    }
+}

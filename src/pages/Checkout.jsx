@@ -27,7 +27,7 @@ const CheckoutForm = () => {
     try {
       // Create payment intent
       const { data: { clientSecret } } = await axios.post(
-        'http://localhost:5000/api/create-payment-intent',
+        `${process.env.REACT_APP_API_URL}/api/create-payment-intent`,
         { amount: total },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -41,7 +41,7 @@ const CheckoutForm = () => {
 
       // Create order
       await axios.post(
-        'http://localhost:5000/api/orders',
+        `${process.env.REACT_APP_API_URL}/api/orders`,
         {
           items: items.map(item => ({
             productId: item._id,

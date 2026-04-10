@@ -10,8 +10,10 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Sale from "./pages/Sale";
 import AdminDashboard from './pages/AdminDashboard';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -28,7 +30,9 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/sale" element={<Sale />} />
           </Routes>
+          <Footer/>
         </Router>
       </CartProvider>
     </AuthProvider>

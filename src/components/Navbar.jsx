@@ -4,14 +4,17 @@ import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import './Navbar.css';
 
+
+import { User, ShoppingCart, MapPin, Search, Heart } from 'lucide-react';
+
       const navLinks = [
   ['HOME', '/'],
   ['SHOP', '/products'],
-  ['WOMEN', '/collection/women'],
-  ['MEN', '/collection/men'],
-  ['LUXURY', '/collection/luxury'],
-  ['GIFT SETS', '/collection/gift-sets'],
-  ['ACCESSORIES', '/collection/accessories'],
+  ['WOMEN', '/products?collection=women'],
+  ['MEN', '/products?collection=men'],
+  ['LUXURY', '/products?collection=luxury'],
+  ['GIFT SETS', '/products?collection=gift-sets'],
+  ['ACCESSORIES', '/products?collection=accessories'],
   ['SALE', '/sale']
 ];
 
@@ -43,8 +46,8 @@ const Navbar = () => {
       <div className="flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-8 border-b border-gray-100 gap-6">
         {/* Brand Logo */}
         <Link to="/" className="flex flex-col items-start group">
-          <span className="text-4xl font-bold tracking-[0.1em] text-black leading-none">LA MDADE</span>
-          <span className="text-[11px] tracking-[0.2em] uppercase text-gray-500 mt-1.5">Perfume Store</span>
+          <span className="text-5xl font-bold tracking-[0.1em] text-dark-coffee leading-none">RÜYA</span>
+          <span className="text-[13.2px] tracking-[0.2em] uppercase text-gray-500 mt-1.5">Perfume Store</span>
         </Link>
 
         {/* Search Bar Group */}
@@ -60,17 +63,19 @@ const Navbar = () => {
             <option>Men</option>
           </select>
           <button className="bg-dark-coffee px-6 flex items-center justify-center hover:bg-[#a38963] transition-colors">
-            <span className="text-white text-lg">🔍</span>
+            <span className="text-white text-xxl"> <Search className="w-6 h-6" /></span>
           </button>
-        </div>
+        </div> 
 
         {/* Action Icons */}
         <div className="flex items-center gap-4">
-          <Link to="/profile" className="p-3 border border-gray-200 rounded-sm hover:bg-gray-50 transition-colors">
-             <span className="text-blue-600 text-xl">👤</span>
+          <Link to="/profile" className="p-3 rounded-sm hover:bg-gray-50 transition-colors">
+             <span className="text-xxl">         <User className="text-dark-coffee w-6 h-6" />
+ </span> 
           </Link>
-          <Link to="/cart" className="relative p-3 border border-gray-200 rounded-sm hover:bg-gray-50 transition-colors">
-            <span className="text-orange-500 text-xl">🛒</span>
+          <Link to="/cart" className="relative p-3 rounded-sm hover:bg-gray-50 transition-colors">
+            <span className="text-xxl">     <ShoppingCart className="text-dark-coffee w-6 h-6" />
+</span>
             {cartItemCount > 0 && (
               <span className="absolute -top-2 -right-2 bg-dark-coffee text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold border-2 border-white">
                 {cartItemCount}
@@ -94,6 +99,7 @@ const Navbar = () => {
     >
       {label}
     </Link>
+
   ))}
 </div>
     </nav>

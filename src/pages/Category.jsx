@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 
 const categories = [
-  ['Women\'s Scent', '/women', 'https://images.unsplash.com/photo-1594035910387-fea47794261f?w=800', 'NEW ARRIVAL'],
-  ['Men\'s Collection', '/men', 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800', 'HOT TREND']
+  ['Women\'s Scent', '/women', '/placeholders/f1.jpeg', 'NEW ARRIVAL'],
+  ['Men\'s Collection', '/men', '/placeholders/f4.jpeg', 'HOT TREND']
 ];
 
 const CategoryBanners = () => (
-  <section className="max-w-[1400px] mx-auto px-6 md:px-16 py-16">
+  <section className="max-w-[1400px] mx-auto px-6 md:px-16 py-16" >
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {categories.map(([title, url, img, label]) => (
-        <div key={title} className="relative h-[350px] overflow-hidden group">
+        <div key={title} className="relative md:h-[25vw] overflow-hidden group">
           <img 
             src={img} 
             alt={title} 

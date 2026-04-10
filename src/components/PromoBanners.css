@@ -1,0 +1,313 @@
+/* ============================================ */
+/* STELINA PROMO BANNERS - SCOPED STYLES        */
+/* No global conflicts - all classes prefixed   */
+/* ============================================ */
+
+.stelina-promo-container {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.stelina-promo-container *,
+.stelina-promo-container *::before,
+.stelina-promo-container *::after {
+    box-sizing: border-box;
+}
+
+/* Row 1 - Two Cards Side by Side */
+.stelina-row-top {
+    display: flex;
+    gap: 15px;
+    margin: auto 2.5%;
+    margin-bottom: 2.5vw;
+}
+
+/* Base Card Styles */
+.stelina-card {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    padding: 25px 20px;
+    position: relative;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+.stelina-card-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #d4943a;
+    margin-bottom: 12px;
+}
+
+.stelina-card-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+    color: #1a1a1a;
+}
+
+.stelina-card-title--small {
+    font-size: 20px;
+}
+
+.stelina-card-text {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #888888;
+    margin: 0 0 20px 0;
+}
+
+.stelina-card-code {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #888888;
+    margin: 0 0 20px 0;
+}
+
+.stelina-card-code strong {
+    color: #d4943a;
+    font-weight: 700;
+}
+
+/* Shop Now Link */
+.stelina-shop-link {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1.5px solid #1a1a1a;
+    padding-bottom: 3px;
+    align-self: flex-start;
+    margin-top: auto;
+    display: inline-block;
+    width: fit-content;
+}
+
+/* Perfume Bottle Placeholders */
+.stelina-bottle-image {
+    position: absolute;
+    background: url(../../public/placeholders/hero.png);
+    right: 15px;
+    bottom: 20px;
+    width: 70px;
+    height: auto;
+    pointer-events: none;
+}
+
+.stelina-bottle-square {
+    width: 60px;
+    height: 90px;
+    background: linear-gradient(135deg, #5c3a1e, #8b5e3c);
+    border-radius: 8px 8px 4px 4px;
+    position: relative;
+}
+
+.stelina-bottle-square::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    width: 30px;
+    height: 8px;
+    background: #3d2510;
+    border-radius: 2px 2px 0 0;
+}
+
+.stelina-bottle-square::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+}
+
+.stelina-bottle-tall {
+    width: 55px;
+    height: 120px;
+    background: url(../../public/placeholders/hero.png);
+    background: linear-gradient(135deg, #4a2e15, #7a5530);
+    border-radius: 6px 6px 3px 3px;
+    position: relative;
+}
+
+.stelina-bottle-tall::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    width: 30px;
+    height: 10px;
+    background: #2c1a0a;
+    border-radius: 2px 2px 0 0;
+}
+
+.stelina-bottle-tall::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    width: 38px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
+}
+
+/* Right Card Specific */
+.stelina-card-right .stelina-card-title {
+    margin-bottom: 8px;
+}
+
+/* Row 2 - Full Width Dark Banner */
+.stelina-banner-bottom {
+    position: relative;
+    background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+    min-height: 200px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    overflow: hidden;
+}
+
+/* Decorative Perfume Bottles on Banner */
+.stelina-banner-decoration {
+    position: absolute;
+    pointer-events: none;
+}
+
+.stelina-bottle-left {
+    left: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 70px;
+    background: linear-gradient(135deg, #6b4c2a, #a0784a);
+    border-radius: 6px 6px 3px 3px;
+    opacity: 0.8;
+}
+
+.stelina-bottle-left::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 12px;
+    width: 25px;
+    height: 7px;
+    background: #4a3518;
+    border-radius: 2px 2px 0 0;
+}
+
+.stelina-bottle-right {
+    right: 20px;
+    bottom: 10px;
+    width: 45px;
+    height: 80px;
+    background: linear-gradient(135deg, #5a3d20, #8b6538);
+    border-radius: 6px 6px 3px 3px;
+    opacity: 0.8;
+    transform: rotate(5deg);
+}
+
+.stelina-bottle-right::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    width: 25px;
+    height: 8px;
+    background: #3d2915;
+    border-radius: 2px 2px 0 0;
+}
+
+.stelina-bottle-far-right {
+    right: -10px;
+    bottom: 30px;
+    width: 35px;
+    height: 55px;
+    background: linear-gradient(135deg, #7a5a35, #b8945e);
+    border-radius: 5px 5px 3px 3px;
+    opacity: 0.6;
+}
+
+.stelina-bottle-far-right::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 8px;
+    width: 18px;
+    height: 6px;
+    background: #5a3d20;
+    border-radius: 2px 2px 0 0;
+}
+
+/* Banner Content */
+.stelina-banner-content {
+    text-align: center;
+    max-width: 380px;
+    z-index: 2;
+    position: relative;
+}
+
+.stelina-banner-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.stelina-banner-text {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #cccccc;
+    margin: 0 0 12px 0;
+}
+
+.stelina-banner-price {
+    font-size: 14px;
+    color: #bbbbbb;
+    margin: 0 0 18px 0;
+}
+
+.stelina-banner-price span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-left: 6px;
+}
+
+.stelina-banner-link {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1.5px solid #ffffff;
+    padding: 8px 22px;
+    background: transparent;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .stelina-row-top {
+        flex-direction: column;
+    }
+
+    .stelina-card {
+        min-height: 220px;
+    }
+}
