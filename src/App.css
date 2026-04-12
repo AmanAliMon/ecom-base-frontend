@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+        .productButtonFilled{
+          width: "100%";
+            padding: "10px 20px";
+            background: "#1a1a1a";
+            border: "1px solid #1a1a1a";
+            color: "#ffffff";
+            text-transform: "uppercase";
+            letter-spacing: "2px";
+            font-size: "11px";
+            cursor: "pointer";
+            font-family: "sans-serif";
+            transition: "all 0.3s";
+        }
+    
+      

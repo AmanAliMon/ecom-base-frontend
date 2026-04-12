@@ -13,9 +13,9 @@ import { User, ShoppingCart, MapPin, Search, Heart } from 'lucide-react';
   ['WOMEN', '/products?collection=women'],
   ['MEN', '/products?collection=men'],
   ['LUXURY', '/products?collection=luxury'],
-  ['GIFT SETS', '/products?collection=gift-sets'],
-  ['ACCESSORIES', '/products?collection=accessories'],
-  ['SALE', '/sale']
+  // ['GIFT SETS', '/products?collection=gift-sets'],
+  // ['ACCESSORIES', '/products?collection=accessories'],
+  // ['SALE', '/sale']
 ];
 
 

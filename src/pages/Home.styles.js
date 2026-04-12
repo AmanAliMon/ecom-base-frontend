@@ -106,19 +106,7 @@
       fontFamily: "var(--font-main)",
       transition: "all 0.3s",
     },
-    productButtonFilled: {
-      width: "100%",
-      padding: "10px 20px",
-      background: "#1a1a1a",
-      border: "1px solid #1a1a1a",
-      color: "#ffffff",
-      textTransform: "uppercase",
-      letterSpacing: "2px",
-      fontSize: "11px",
-      cursor: "pointer",
-      fontFamily: "sans-serif",
-      transition: "all 0.3s",
-    },
+
     // ── Offer banner ───────────────────────────────────
     offerBanner: {
       padding: "clamp(60px, 8vw, 100px) clamp(20px, 5vw, 40px)",

@@ -14,6 +14,7 @@ import Sale from "./pages/Sale";
 import AdminDashboard from './pages/AdminDashboard';
 import './App.css';
 import Footer from './components/Footer';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -29,10 +30,11 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/sale" element={<Sale />} />
           </Routes>
-          <Footer/>
+          <Footer />
         </Router>
       </CartProvider>
     </AuthProvider>
