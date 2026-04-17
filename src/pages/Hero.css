@@ -39,3 +39,7 @@
     font-family: 'Tenor Sans', sans-serif;
     letter-spacing: 0.05em;
 }
+
+.hero-section{
+    color:var(--dark-coffee)
+}

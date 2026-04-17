@@ -8,11 +8,11 @@ const Hero = () => {
     const navigate = useNavigate();
 
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-between min-h-[85vh] bg-stelina-bg px-6 md:px-[10%] font-tenor overflow-hidden">
+    <section className="relative flex flex-col md:flex-row items-center justify-between min-h-[85vh] hero-section  bg-copper px-6 md:px-[10%] font-tenor overflow-hidden">
       
       {/* Hero Left: Content */}
       <div className="flex-1 z-10 py-12 md:py-0 animate-fade-in">
-        <p className="text-stelina-gold uppercase tracking-[0.3em] text-sm font-semibold mb-4">
+        <p className="uppercase tracking-[0.3em] text-sm font-semibold mb-4">
           Take a Perfume
         </p>
         
@@ -22,8 +22,8 @@ const Hero = () => {
         </h1>
         
         <div className="flex flex-col mb-10">
-          <p className="text-gray-500 uppercase text-xs tracking-widest mb-1">Save Price:</p>
-          <span className="text-3xl md:text-4xl text-stelina-gold font-medium">$170.00</span>
+          <p className="uppercase text-xs tracking-widest mb-1">Save Price:</p>
+          <span className="text-3xl md:text-4xl font-medium">$170.00</span>
         </div>
 
         <Buttons.Primary variant="fill"

@@ -15,7 +15,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import './App.css';
 import Footer from './components/Footer';
 import Profile from './pages/Profile';
-
+import SearchResults from './pages/Search'
 function App() {
   return (
     <AuthProvider>
@@ -27,6 +27,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
+<Route path="/search" element={<SearchResults />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />

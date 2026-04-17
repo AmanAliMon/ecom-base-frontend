@@ -2,7 +2,6 @@
     // ── Featured products ──────────────────────────────
     featured: {
       padding: "clamp(40px, 6vw, 80px) clamp(16px, 4vw, 40px)",
-      background: "#faf8f5",
     },
     productGrid: {
       display: "grid",

@@ -7,12 +7,12 @@ const ProductGrid = ({ products, loading }) => {
 
   return (
     <div style={styles.featured}>
-   <p className="text-sm uppercase tracking-wider text-gray-500 text-center mb-2">
-      Our Selection
-    </p>
-    <h2 className="text-4xl font-light tracking-wide text-center uppercase mb-12">
-      Featured Products
-    </h2>
+      <p className="text-sm uppercase tracking-wider text-gray-500 text-center mb-2">
+        Our Selection
+      </p>
+      <h2 className="text-4xl font-light tracking-wide text-center uppercase mb-12">
+        Featured Products
+      </h2>
       <div style={{ marginBottom: "50px" }} />
 
       {loading ? (
@@ -28,12 +28,9 @@ const ProductGrid = ({ products, loading }) => {
                 key={id}
                 style={{
                   ...styles.productCard,
-                  transform:
-                    hoveredCard === id ? "translateY(-4px)" : "none",
+                  transform: hoveredCard === id ? "translateY(-4px)" : "none",
                   boxShadow:
-                    hoveredCard === id
-                      ? "0 8px 30px rgba(0,0,0,0.1)"
-                      : "none",
+                    hoveredCard === id ? "0 8px 30px rgba(0,0,0,0.1)" : "none",
                 }}
                 onMouseEnter={() => setHoveredCard(id)}
                 onMouseLeave={() => setHoveredCard(null)}
@@ -49,25 +46,18 @@ const ProductGrid = ({ products, loading }) => {
                   />
 
                   {product.stock < 10 && product.stock > 0 && (
-                    <span style={styles.productBadge}>
-                      Low Stock
-                    </span>
+                    <span style={styles.productBadge}>Low Stock</span>
                   )}
                 </div>
 
                 <div style={styles.productInfo}>
                   <p style={styles.productBrand}>Stelina</p>
 
-                  <h3 style={styles.productName}>
-                    {product.name}
-                  </h3>
+                  <h3 style={styles.productName}>{product.name}</h3>
 
-                  <p style={styles.productPrice}>
-                    ${product.price}
-                  </p>
+                  <p style={styles.productPrice}>${product.price}</p>
 
- <Buttons.CartButton            
-/>
+                  <Buttons.CartButton />
                 </div>
               </Link>
             );
@@ -76,7 +66,10 @@ const ProductGrid = ({ products, loading }) => {
       )}
 
       <div style={styles.viewAllWrap}>
-        <Link to="/products" style={styles.viewAllBtn}>
+        <Link
+          to="/products"
+          className="text-xs font-bold tracking-[0.3em] uppercase border-b-2 border-[var(--dark-coffe)] pb-1 hover:text-[var(--dark-coffe)] transition-colors"
+        >
           View All Products
         </Link>
       </div>
