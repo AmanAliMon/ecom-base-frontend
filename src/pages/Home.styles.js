@@ -22,7 +22,7 @@
     },
     productImageContainer: {
       position: "relative",
-      height: "300px",
+      height: "400px",
       overflow: "hidden",
       background: "#f5f1eb",
     },

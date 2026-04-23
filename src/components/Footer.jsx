@@ -33,7 +33,7 @@ const Footer = () => {
           
           {/* Column 1 - Brand */}
           <div className="stelina-footer__column stelina-footer__column--brand">
-            <h2 className="stelina-footer__logo">STELINA</h2>
+            <h2 className="stelina-footer__logo">RÜYA</h2>
             <p className="stelina-footer__tagline">Essence of Luxury</p>
             <p className="stelina-footer__description">
               Discover your signature scent from our curated collection of premium fragrances.
@@ -73,12 +73,6 @@ const Footer = () => {
                 <Link to="/products" className="stelina-footer__link">All Products</Link>
               </li>
               <li className="stelina-footer__list-item">
-                <Link to="/products?category=women" className="stelina-footer__link">Women's Perfume</Link>
-              </li>
-              <li className="stelina-footer__list-item">
-                <Link to="/products?category=men" className="stelina-footer__link">Men's Cologne</Link>
-              </li>
-              <li className="stelina-footer__list-item">
                 <Link to="/products?category=luxury" className="stelina-footer__link">Luxury Collection</Link>
               </li>
               <li className="stelina-footer__list-item">
@@ -95,16 +89,10 @@ const Footer = () => {
             <h4 className="stelina-footer__heading">Support</h4>
             <ul className="stelina-footer__list">
               <li className="stelina-footer__list-item">
-                <Link to="/help" className="stelina-footer__link">Help Center</Link>
-              </li>
-              <li className="stelina-footer__list-item">
                 <Link to="/shipping" className="stelina-footer__link">Shipping Information</Link>
               </li>
               <li className="stelina-footer__list-item">
                 <Link to="/returns" className="stelina-footer__link">Returns & Exchanges</Link>
-              </li>
-              <li className="stelina-footer__list-item">
-                <Link to="/track-order" className="stelina-footer__link">Track Your Order</Link>
               </li>
               <li className="stelina-footer__list-item">
                 <Link to="/size-guide" className="stelina-footer__link">Size Guide</Link>
@@ -126,15 +114,6 @@ const Footer = () => {
                 <Link to="/blog" className="stelina-footer__link">Blog</Link>
               </li>
               <li className="stelina-footer__list-item">
-                <Link to="/careers" className="stelina-footer__link">Careers</Link>
-              </li>
-              <li className="stelina-footer__list-item">
-                <Link to="/press" className="stelina-footer__link">Press</Link>
-              </li>
-              <li className="stelina-footer__list-item">
-                <Link to="/sustainability" className="stelina-footer__link">Sustainability</Link>
-              </li>
-              <li className="stelina-footer__list-item">
                 <Link to="/affiliate" className="stelina-footer__link">Affiliate Program</Link>
               </li>
             </ul>
@@ -148,20 +127,20 @@ const Footer = () => {
                 <svg className="stelina-footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:hello@stelina.com" className="stelina-footer__link">hello@stelina.com</a>
+                <a href="mailto:hello@stelina.com" className="stelina-footer__link">hello@ruya.com</a>
               </li>
               <li className="stelina-footer__list-item stelina-footer__contact-item">
                 <svg className="stelina-footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+1234567890" className="stelina-footer__link">+1 (234) 567-890</a>
+                <a href="tel:+1234567890" className="stelina-footer__link">+1 (294) 599-430</a>
               </li>
               <li className="stelina-footer__list-item stelina-footer__contact-item">
                 <svg className="stelina-footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span className="stelina-footer__text">123 Luxury Lane, Suite 100<br />New York, NY 10001</span>
+                <span className="stelina-footer__text">183 Luxury Lane, Suite 108<br />New York, NY 10001</span>
               </li>
             </ul>
           </div>
@@ -173,7 +152,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="stelina-footer__bottom">
           <p className="stelina-footer__copyright">
-            © {new Date().getFullYear()} STELINA. All rights reserved.
+            © {new Date().getFullYear()} RUYA. All rights reserved.
           </p>
           <div className="stelina-footer__legal">
             <Link to="/privacy" className="stelina-footer__legal-link">Privacy Policy</Link>

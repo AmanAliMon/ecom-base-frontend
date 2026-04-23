@@ -1,0 +1,61 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Hero.css';
+import { useNavigate } from 'react-router-dom';
+
+import Buttons from './Buttons';
+const Hero = () => {
+    const navigate = useNavigate();
+
+  return (
+    <section className="relative flex flex-col md:flex-row items-center justify-between min-h-[85vh] hero-section  bg-copper px-6 md:px-[10%] font-tenor overflow-hidden">
+      {/* Hero Left: Content */}
+      <div className="flex-1 z-10 py-12 md:py-0 animate-fade-in">
+        <p className="uppercase tracking-[0.3em] text-sm font-semibold mb-4">
+          Take a Perfume
+        </p>
+
+        <h1>
+          <span className="text-4xl md:text-5xl uppercase leading-[1.1] mb-10 text-stelina-dark">
+            Up To 25% Off
+          </span>{" "}
+          <br />
+          <span className="text-3xl md:text-7xl uppercase leading-[1.1] mb-6 text-stelina-dark font-bold">
+            Luxury Perfumes by Ruya
+          </span>
+        </h1>
+{/* 
+        <div className="flex flex-col mb-10">
+          <p className="uppercase text-xs tracking-widest mb-1">Save Price:</p>
+          <span className="text-3xl md:text-4xl font-medium">$170.00</span>
+        </div> */}
+<br />
+        <Buttons.Primary
+          variant="fill"
+          onClick={() => navigate("/products")}
+          className="text-white mt-4 px-12 py-4 text-lg tracking-widest font-bold duration-300"
+          Text="Shop Now"
+        />
+      </div>
+
+      {/* Hero Right: Product Image */}
+      <div className="flex-1 flex justify-center items-center relative h-full w-full">
+        {/* Soft Gold Background Glow */}
+        <div className="absolute w-[300px] h-[300px] md:w-[550px] md:h-[550px] bg-stelina-gold opacity-[0.07] rounded-full blur-3xl" />
+
+        <div className="relative z-10 hero-image-wrapper">
+          <img
+            src="/placeholders/hero.png"
+            alt="Luxury Stelina Perfume"
+            className="max-h-[450px] md:max-h-[650px] object-contain drop-shadow-2xl"
+            onError={(e) => {
+              e.target.src = "https://i.ibb.co/Gxcp7px/perfume-placeholder.png";
+            }}
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

@@ -58,6 +58,7 @@ const CheckoutForm = () => {
       navigate('/order-success');
     } catch (error) {
       console.error(error);
+
       alert('Payment failed: ' + error.message);
     }
     setLoading(false);

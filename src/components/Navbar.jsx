@@ -86,7 +86,7 @@ const handleSearch = (e) => {
             onKeyPress={handleKeyPress}
           />
           <select
-            className="bg-gray-50 border-l border-gray-200 px-4 text-sm text-gray-600 outline-none cursor-pointer"
+            className="bg-gray-50 border-l hidden md:block border-gray-200 px-4 text-sm text-gray-600 outline-none cursor-pointer nav-select"
             value={searchCategory}
             onChange={(e) => setSearchCategory(e.target.value)}
           >

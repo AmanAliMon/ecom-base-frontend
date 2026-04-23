@@ -1,12 +1,22 @@
 import { Link } from 'react-router-dom';
 
 const categories = [
-  ['Women\'s Scent', '/women', '/placeholders/f1.jpeg', 'NEW ARRIVAL'],
-  ['Men\'s Collection', '/men', '/placeholders/f4.jpeg', 'HOT TREND']
+  [
+    "Women's Scent",
+    "/products?collection=men",
+    "/placeholders/f1.jpeg",
+    "NEW ARRIVAL",
+  ],
+  [
+    "Men's Collection",
+    "/products?collection=men",
+    "/placeholders/f4.jpeg",
+    "HOT TREND",
+  ],
 ];
 
 const CategoryBanners = () => (
-  <section className="max-w-[1400px] mx-auto px-6 md:px-16 py-16" >
+  <section className="max-w-[1400px] mx-auto px-6 md:px-16 pb-16" >
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {categories.map(([title, url, img, label]) => (
         <div key={title} className="relative md:h-[25vw] overflow-hidden group">

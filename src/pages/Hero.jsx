@@ -1,54 +1,66 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Hero.css';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { ShoppingBag, Star, Sparkles, ChevronRight } from "lucide-react";
 
-import Buttons from './Buttons';
 const Hero = () => {
-    const navigate = useNavigate();
-
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-between min-h-[85vh] hero-section  bg-copper px-6 md:px-[10%] font-tenor overflow-hidden">
-      
-      {/* Hero Left: Content */}
-      <div className="flex-1 z-10 py-12 md:py-0 animate-fade-in">
-        <p className="uppercase tracking-[0.3em] text-sm font-semibold mb-4">
-          Take a Perfume
-        </p>
-        
-        <h1 className="text-4xl md:text-7xl uppercase leading-[1.1] mb-6 text-stelina-dark">
-          Up To 25% Off <br />
-          <span className="font-bold">Order Now</span>
-        </h1>
-        
-        <div className="flex flex-col mb-10">
-          <p className="uppercase text-xs tracking-widest mb-1">Save Price:</p>
-          <span className="text-3xl md:text-4xl font-medium">$170.00</span>
-        </div>
+    <div className="min-h-screen bg-white flex items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left - Content */}
+          <div>
+            <div className="inline-flex items-center gap-2 bg-copper px-4 py-2 rounded-full mb-6">
+              <Sparkles className="w-3 h-3 text-white" />
+              <span className="text-[10px] tracking-[3px] text-white text-bold uppercase">
+                New Arrival
+              </span>
+            </div>
 
-        <Buttons.Primary variant="fill"
-          onClick={()=>navigate("/products") }
-          className="text-white px-12 py-4 text-lg tracking-widest font-bold duration-300"
-        Text='Shop Now'
-/>
-          
-      </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] mb-6 leading-tight">
+              The Essence of
+              <br />
+              <span className="font-medium">
+                Luxury{" "}
+                <span className="text-[var(--dark-coffee)]">Fragrance</span>
+              </span>
+            </h1>
 
-      {/* Hero Right: Product Image */}
-      <div className="flex-1 flex justify-center items-center relative h-full w-full">
-        {/* Soft Gold Background Glow */}
-        <div className="absolute w-[300px] h-[300px] md:w-[550px] md:h-[550px] bg-stelina-gold opacity-[0.07] rounded-full blur-3xl" />
-        
-        <div className="relative z-10 hero-image-wrapper">
-          <img 
-            src="/placeholders/hero.png" 
-            alt="Luxury Stelina Perfume" 
-            className="max-h-[450px] md:max-h-[650px] object-contain drop-shadow-2xl"
-            onError={(e) => { e.target.src = 'https://i.ibb.co/Gxcp7px/perfume-placeholder.png'; }}
-          />
+            <p className="text-gray-500 leading-relaxed mb-8 text-base max-w-md">
+              Discover our curated collection of exquisite perfumes crafted from
+              the finest ingredients. Each scent tells a unique story.
+            </p>
+
+            <div className="flex flex-wrap gap-4 mb-8">
+              <button className="bg-dark-coffee text-white px-8 py-3 text-sm uppercase tracking-wider hover:bg-[var(--dark-coffee)] transition-colors flex items-center gap-2">
+                <ShoppingBag className="w-4 h-4" />
+                Shop Now
+              </button>
+              <button className="border border-[#ede8e0] px-8 py-3 text-sm uppercase tracking-wider hover:border-[var(--dark-coffee)] transition-colors">
+                Discover Collection
+              </button>
+            </div>
+
+            <div className="flex items-center gap-4 pt-4 border-t border-[#ede8e0]">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-copper text-copper" />
+                ))}
+              </div>
+              <span className="text-sm text-gray-500">245 reviews</span>
+            </div>
+          </div>
+
+          {/* Right - Perfume Bottle */}
+          <div className="flex justify-center">
+            <img
+              src="/placeholders/hero.png"
+              style={{width:"150% !important",height:"150%"}}
+              alt="Luxury Perfume"
+              className="w-full max-w-sm drop-shadow-2xl"
+            />
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

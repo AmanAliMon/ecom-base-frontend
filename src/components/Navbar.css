@@ -1,6 +1,10 @@
 /* Navbar.css */
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 
+.nav-select{
+    font-family: 'Tenor Sans', sans-serif;
+ appearance: none;
+}
 .font-tenor {
   font-family: 'Tenor Sans', sans-serif;
 }

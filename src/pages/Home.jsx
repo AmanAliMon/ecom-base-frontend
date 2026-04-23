@@ -62,7 +62,7 @@ const Home = () => {
 
       {/* Parallax Quote Section */}
       <div
-        className="w-full h-[500px] bg-fixed bg-center bg-cover flex items-center justify-center"
+        className="w-full bg-fixed bg-center bg-cover flex items-center justify-center"
         style={{
           backgroundImage:
             'url("https://images.unsplash.com/photo-1512568448817-19918a994770?w=1600")',

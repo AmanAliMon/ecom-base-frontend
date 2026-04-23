@@ -270,16 +270,25 @@ const Products = () => {
                       key={id}
                       className="bg-white border border-[#ede8e0] overflow-hidden transition-all duration-300"
                       style={{
-                        transform: hoveredCard === id ? 'translateY(-4px)' : 'none',
-                        boxShadow: hoveredCard === id ? '0 8px 30px rgba(0,0,0,0.1)' : 'none',
+                        transform:
+                          hoveredCard === id ? "translateY(-4px)" : "none",
+                        boxShadow:
+                          hoveredCard === id
+                            ? "0 8px 30px rgba(0,0,0,0.1)"
+                            : "none",
                       }}
                       onMouseEnter={() => setHoveredCard(id)}
                       onMouseLeave={() => setHoveredCard(null)}
                     >
                       <Link to={`/product/${id}`} className="block">
-                        <div className="relative h-[280px] overflow-hidden bg-[#f5f1eb]">
+                        <div
+                          className="relative h-[400px] overflow-hidden bg-[#f5f1eb]"
+                        >
                           <img
-                            src={product.image || 'https://placehold.co/400x500/f5f1eb/b8976a?text=Perfume'}
+                            src={
+                              product.image ||
+                              "https://placehold.co/400x500/f5f1eb/b8976a?text=Perfume"
+                            }
                             alt={product.name}
                             className="w-full h-full object-cover transition-transform duration-600 hover:scale-105"
                           />
@@ -289,7 +298,7 @@ const Products = () => {
                               Low Stock
                             </span>
                           )}
-                          
+
                           {product.stock === 0 && (
                             <span className="absolute top-4 left-4 bg-gray-800 text-white px-3 py-1 text-[10px] uppercase tracking-wider">
                               Sold Out
@@ -300,7 +309,7 @@ const Products = () => {
 
                       <div className="p-5 text-center">
                         <p className="text-[10px] tracking-[2px] text-[var(--dark-coffe)] uppercase mb-1.5">
-                          Stelina
+                          RUYA
                         </p>
 
                         <Link to={`/product/${id}`}>
@@ -309,13 +318,15 @@ const Products = () => {
                           </h2>
                         </Link>
 
-                        <p className="text-xs text-gray-500 mb-2">{product.category}</p>
+                        <p className="text-xs text-gray-500 mb-2">
+                          {product.category}
+                        </p>
 
                         <p className="text-lg text-[var(--dark-coffe)] font-semibold mb-4">
                           ${product.price}
                         </p>
 
-                        <Buttons.CartButton 
+                        <Buttons.CartButton
                           product={product}
                           variant="outline"
                           size="md"

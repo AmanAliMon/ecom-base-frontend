@@ -26,7 +26,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="bg-white py-12 pt-0">
+    <div className="bg-white py-12">
       <div className="max-w-[1400px] mx-auto px-6 md:px-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (

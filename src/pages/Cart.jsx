@@ -168,7 +168,7 @@ const Cart = () => {
 
               <Link 
                 to="/checkout"
-                className="flex items-center justify-center gap-2 w-full py-3 bg-[var(--dark-coffe)] text-white text-sm uppercase tracking-wider hover:bg-opacity-90 transition-all duration-300"
+                className="flex items-center justify-center gap-2 w-full py-3 bg-[var(--dark-coffee)] text-white text-sm uppercase tracking-wider hover:bg-opacity-90 transition-all duration-300"
               >
                 <CreditCard className="w-4 h-4" />
                 Proceed to Checkout
